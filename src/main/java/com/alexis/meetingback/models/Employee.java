@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.MongoId;
 
 @Data
 @Document
-public class Empleoyee {
+public class Employee {
 
     @MongoId
     private String id;
@@ -22,7 +22,7 @@ public class Empleoyee {
     // private Type type; Para después
 
 
-    public Empleoyee(String firstName, String lastName, Gender gender, String email, Integer phone) {
+    public Employee(String firstName, String lastName, Gender gender, String email, Integer phone) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
