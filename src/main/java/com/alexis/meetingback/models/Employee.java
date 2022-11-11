@@ -18,11 +18,11 @@ public class Employee {
     @Indexed(unique = true)
     private String email;
     @Indexed(unique = true)
-    private Integer phone;
+    private Long phone;
     // private Type type; Para después
 
 
-    public Employee(String firstName, String lastName, Gender gender, String email, Integer phone) {
+    public Employee(String firstName, String lastName, Gender gender, String email, Long phone) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
