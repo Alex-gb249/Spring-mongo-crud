@@ -18,10 +18,10 @@ public class Client {
     @Indexed(unique = true)
     private String email;
     @Indexed(unique = true)
-    private Integer phone;
-    private Integer score;
+    private Long phone;
+    private Long score;
 
-    public Client(String firstName, String lastName, Gender gender, String email, Integer phone, Integer score) {
+    public Client(String firstName, String lastName, Gender gender, String email, Long phone, Long score) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
